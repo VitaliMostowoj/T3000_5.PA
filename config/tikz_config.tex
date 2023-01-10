@@ -1,0 +1,41 @@
+% Konfiguration von Tikz
+\tikzset{
+    my adjustment/.store in=\arrowadjust,
+    arrow line/.style={
+        draw,
+        -{LaTeX[]},
+        my adjustment={.5*(3pt + 4.5*\pgflinewidth)}
+    },
+    start/.style ={
+        circle, 
+        minimum width =0.3 cm, 
+        minimum height =0.3 cm, 
+        draw, 
+        fill
+    },
+    activity/.style ={ 
+        rectangle, 
+        minimum width = 4cm,
+        minimum height = 0.7 cm,
+        rounded corners = 10pt, 
+        draw 
+    },
+    help/.style ={ 
+        rectangle
+    },
+    decision/.style ={
+        diamond,
+        minimum width = 2cm,
+        minimum height = 2cm,
+        draw 
+    },
+    end/.style ={
+        draw,
+        double = white,
+        circle,
+        inner sep = 1pt,
+        minimum width = 0.3cm,
+        minimum height = 0.3cm,
+        fill
+    }
+}
