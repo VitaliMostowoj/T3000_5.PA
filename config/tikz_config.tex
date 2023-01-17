@@ -39,3 +39,39 @@
         fill
     }
 }
+
+\tikzmath{
+    \winkel = 83;
+    \hoehe = 1cm;
+    \TanValue = {tan(\winkel)};
+    \TanSecValue = {tan(7)};
+    function oberseite(\a) {
+        return (\a - 2*(\hoehe / \TanValue));
+    };
+%
+    function position(\b){
+        return \b + \TanSecValue * 2*\hoehe;
+    };
+    \unten = 2cm;
+    \mitte = oberseite(\unten);
+    \oben = oberseite(\mitte);
+    \obenoben = oberseite(\oben);
+%
+    \pos1 = position(2*\obenoben);
+    \pos2 = position(\pos1);
+    \pos3 = position(\pos2);
+}
+    
+    % Konfiguration von Tikz
+    
+\tikzset{
+        trapez/.style ={
+            trapezium,
+            thick,
+            inner ysep = \hoehe,
+            trapezium stretches = true,
+            trapezium angle = \winkel,
+            align = center,
+            font={\fontsize{9pt}{11}\selectfont\bfseries},
+        }
+}

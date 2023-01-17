@@ -23,30 +23,65 @@
 
 \begin{figure}
     \centering
+    
+    \begin{figure}
+            \centering
+            \begin{tikzpicture}
+                \draw[step=1cm,gray,very thin] (-6cm,-6cm) grid (6cm,6cm);
+                
+                \node[trapez={\oben},draw,inner xsep = \obenoben] at (-2cm,2cm) {};
+                \node[trapez={\mitte},draw,inner xsep = \oben] at (-2cm,0cm) {};
+                \node[trapez={\unten},draw, inner xsep = \mitte] at (-2cm,-2cm) {};
+                
+                \node[trapez={\oben},inner xsep = \obenoben] at (-2cm,2cm) {Service-\\roboter};
+                \node[trapez={\mitte},inner xsep = \oben] at (-2cm,0cm) {Mobiler\\Roboter};
+                \node[trapez={\unten},inner xsep = \mitte] at (-2cm,-2cm) {Industrie-\\roboter};
+                
+                
+                \node[trapez={\unten},draw, inner xsep = \mitte,rotate = 180] at (2cm,2cm) {};
+                \node[trapez={\mitte},draw,inner xsep = \oben,rotate = 180] at (2cm,0cm) {};
+                \node[trapez={\oben},draw,inner xsep = \obenoben,rotate = 180] at (2cm,-2cm) {};
+        
+        
+                
+                \draw[thick,->] (0,-4)--(0,4) node [anchor = south east] {y-Achse};     % erstellen eines Pfeiles in vertikaler Richtung mit Beschriftung
+                \draw[thick,->](-4,0)--(4,0) node [anchor = north west] {x-Achse};      % erstellen eines Pfeiles in horizontaler Richtung mit Beschriftung
+                
+                
+                \draw[red,thick](0,0) circle (3cm);
+                
+                \draw[blue,thick](-3,-3) -- (3,3);
+                \draw[blue,thick](-3,3) -- (3,-3);
+                
+                \draw[green,thick](0,0) parabola (3,3);
+                \draw[green,thick,rotate= 180](0,0) parabola (3,3);
+                
+                \node[trapez, red, minimum width = 3cm, minimum height = 2cm, trapezium left angle = 60, trapezium right angle = 120, inner sep = 2cm] at (0,0){};
+                \node[trapez,minimum height = 2cm, minimum width = 2.5cm, inner sep = 1cm, trapezium angle = 80.41] at (0,-2){}; 
+                \node[trapez,minimum height = 2cm, minimum width = 2cm,   inner sep = 0.75cm, trapezium angle = 80.41] at (0,0){};
+                
+                \node[trapez,minimum width = 1.5cm, inner sep = 0.5cm] at (-1,2){};
+                \node[trapez,minimum width = 2cm, inner sep = 0.75cm] at (-1,0){};
+                \node[trapez,minimum width = 2.5cm, inner sep = 1cm] at (-1,-2){};
+                
+                \node[trapez,minimum width = 2.5cm, inner sep = 1cm, rotate = 180] at (1,2){};
+                \node[trapez,minimum width = 2cm, inner sep = 0.75cm, rotate = 180] at (1,0){};
+                \node[trapez,minimum width = 1.5cm, inner sep = 0.5cm, rotate = 180] at (1,-2){};
+        
+                \node[trapez, minimum width = 2.5cm, inner sep = 0.5cm, minimum height = 6cm,trapezium angle = 67]at (-1,0){};
+            \end{tikzpicture}
+            
+            
+            
+            
     \begin{tikzpicture}
         \draw[step=1cm,gray,very thin] (-6cm,-6cm) grid (6cm,6cm);
-
-        \node[trapez={\oben},draw,inner xsep = \obenoben] at (-2cm,2cm) {};
-        \node[trapez={\mitte},draw,inner xsep = \oben] at (-2cm,0cm) {};
-        \node[trapez={\unten},draw, inner xsep = \mitte] at (-2cm,-2cm) {};
-
-        \node[trapez={\oben},inner xsep = \obenoben] at (-2cm,2cm) {Service-\\roboter};
-        \node[trapez={\mitte},inner xsep = \oben] at (-2cm,0cm) {Mobiler\\Roboter};
-        \node[trapez={\unten},inner xsep = \mitte] at (-2cm,-2cm) {Industrie-\\roboter};
-
-
-        \node[trapez={\unten},draw, inner xsep = \mitte,rotate = 180] at (2cm,2cm) {};
-        \node[trapez={\mitte},draw,inner xsep = \oben,rotate = 180] at (2cm,0cm) {};
-        \node[trapez={\oben},draw,inner xsep = \obenoben,rotate = 180] at (2cm,-2cm) {};
-
-
-
         \draw[thick,->] (0,-4)--(0,4) node [anchor = south east] {y-Achse};     % erstellen eines Pfeiles in vertikaler Richtung mit Beschriftung
         \draw[thick,->](-4,0)--(4,0) node [anchor = north west] {x-Achse};      % erstellen eines Pfeiles in horizontaler Richtung mit Beschriftung
-
+        
         
         \draw[red,thick](0,0) circle (3cm);
-
+        
         \draw[blue,thick](-3,-3) -- (3,3);
         \draw[blue,thick](-3,3) -- (3,-3);
 
