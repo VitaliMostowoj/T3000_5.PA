@@ -6,8 +6,6 @@
 % Eingabe der benötigten Konfigurationen
 \input{config/parameter.tex} 
 \input{config/packages.tex}
-\input{config/tikz_config.tex}
-
 
 %===============================================================================
 %Start des Dokuments
@@ -23,15 +21,12 @@
 
 %Sperrvermerk
 % \pagestyle{empty}
-% \include{sections/0_defaults/blocking-notice/blocking-notice-et.tex}
+\include{sections/0_defaults/blocking-notice/blocking-notice-et.tex}
 
 \pagenumbering{Roman}
 
 %Eigenleistung
 \include{sections/0_defaults/personal-contribution/personal-contribution.tex}
-
-%Abstract
-\include{sections/1_abstract/abstract.tex}
 
 %===================================================
 %Verzeichnisse: Verwendete Verzeichnisse Aktivieren durch entfernen von: % vor dem \
@@ -46,7 +41,7 @@
 % \addcontentsline{toc}{chapter}{Tabellenverzeichnis}\listoftables\clearpage
 
 %Lstingverzeichnis
-\addcontentsline{toc}{chapter}{Listingverzeichnis}\lstlistoflistings\clearpage
+% \addcontentsline{toc}{chapter}{Listingverzeichnis}\lstlistoflistings\clearpage
 
 %Abkürzungsverzeichnis
 \include{resources/directories/acronyms.tex}
@@ -62,10 +57,8 @@
 % Kapitel als eigene .tex datei erstellen und einbinden mit: \include{Pfad/Dateiname}
 
 \include{sections/2_einleitung/21_einleitung.tex}
-\include{sections/2_einleitung/22_aufgabenstellung.tex}
-\include{sections/2_einleitung/23_vorgehensweise.tex}
-
-\include{sections/beispiele.tex}
+\include{sections/2_einleitung/22_vorgehensweise.tex}
+\include{sections/2_einleitung/23_methoden}
 
 \include{sections/5_zusammenfassung/51_zusammenfassung.tex}
 
@@ -75,6 +68,6 @@
 %Literaturverzeichnis
 \addcontentsline{toc}{chapter}{Literaturverzeichnis}\printbibliography[title=Literaturverzeichnis]
 %Anhang
-\include{sections/appendix/appendix.tex}
+% \include{sections/appendix/appendix.tex}
 
 \end{document}
