@@ -1,16 +1,35 @@
-\chapter{Arbeitsplan}
-Für die theoretische Vorbereitung auf das Projekt ist zunächst die Einarbeitung in die Progammiersprache Python und die agile Softwarentwicklung notwendig. Dafür werden 
+\section{Arbeitsplan}
+Für die theoretische Vorbereitung auf das Projekt ist zunächst die Einarbeitung in die Programmiersprache Python und die agile Softwareentwicklung notwendig. Dafür werden 
 die Themen modulare Programmierung und Containerisierung betrachtet. Anschließend 
 wird ein softwareseitiges Modell für die Grenzwertüberschreitung der Temperatur entwickelt und abschließend die Software Applikation implementiert, getestet und dokumentiert.
+Für die Umsetzung wurde zunächst ein Arbeitsplan angelegt. Dieser ist in \autoref{tab:arbeitsplan} abgebildet. Dieser Arbeitsplan dient dazu dem Projekt eine Projektstruktur 
+zu liefern und eine systematisches Vorgehen in Bezug auf das Projekt abzusichern. 
 
-\newcommand{\besetzt}{\multicolumn{1}{>{\columncolor{darkred}}c|}{}}
-\newcommand{\setrow}[1]{\gdef\currentrowstyle{#1}\ignorespaces}
+\newcommand{\besetzt}{\multicolumn{1}{>{\columncolor{darkred}}m{5mm}|}{}}
+\newcommand{\urlaub}{\multicolumn{1}{>{\columncolor{gray}}m{5mm}|}{}}
+
+\renewcommand{\arraystretch}{1.5}
+
 \begin{table}[H]                               
     \centering
-    \caption{Klemmenbezeichnung}
-    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|} \hline
-        \multicolumn{1}{|c|}{\textbf{Arbeitspaket}} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10} & \textbf{11} & \textbf{12} \\ \hline   
-        Ist-Analyse                        & \besetzt &   &   &   &   &   &   &   &   &    &    &    \\ \hline
+    \caption{Arbeitsplan}
+    \begin{tabular}{|m{4cm}|m{5mm}|m{5mm}|m{5mm}|m{5mm}|m{5mm}|m{5mm}|m{5mm}|m{5mm}|m{5mm}|m{5mm}|m{5mm}|m{5mm}|} \hline 
+        \textbf{Arbeitspaket} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10} & \textbf{11} & \textbf{12} \\ \hline 
+        Kick-off  & & & &\besetzt & & & & & & & & \\ \hline
+        Einarbeitung & & & & & \besetzt & \besetzt & \besetzt & & & & & \\ \hline
+        Ist-Analyse & & & & & & \besetzt & \besetzt & & & & & \\ \hline
+        Modellentwicklung & & & & & & & & \besetzt & & & & \\ \hline
+        Implementierung & & & & & & & & & \besetzt & \besetzt & & \\ \hline
+        Testen & & & & & & & & & & & \besetzt & \\ \hline
+        Dokumentation & & & & & & & & & & & & \besetzt \\ \hline
     \end{tabular}
+    \label{tab:arbeitsplan}
 \end{table}
 
+Für die genaue Projektplanung dient der Kick-Off. In diesem wurden die einzelnen Arbeitspakete festgelegt. Das Arbeitspaket Einarbeitung dient der Aneignung von Wissen und Fähigkeiten,
+die für die Bearbeitung dieses Projektes notwendig sind. Dieses Arbeitspaket läuft zudem parallel zu den weiteren Schritten, da die Einarbeitung mit der Bearbeitung von projektbezogen 
+Themen konkretisiert wird. Die Einarbeitung umfasst in diesem Projekt das Lernen der Programmiersprache Python, die Einarbeitung in die internen Abläufe, die agile Softwareentwicklung
+und das zu erweiternde System. Das nächste Arbeitspakte, die Ist-Analyse, dient dazu das gegebene System, AssetInsight, näher zu betrachten und zu analysieren, welche Ressourcen bereits 
+vorhanden sind und für die Bearbeitung des Projektes genutzt werden können. Auf Basis der Ist-Analyse kann ein theoretisches Modell entwickelt werden, welches die zu entwerfende Funktion 
+und ihre Integrierung in das gegebene System beschreibt und erläutert. Mithilfe des theoretischen Modells soll abschließend das Modell softwareseitig implementiert und Testfunktionen und 
+eine Dokumentation der Funktion geschrieben werden.
